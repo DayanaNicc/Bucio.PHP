@@ -25,7 +25,7 @@ body {
 
 <body>
 <p><&nbsp;></p>
-<table width="90%" height="50%" border="2" align="center" cellpadding="0" cellspacing="0" bordercolor="#4a4646">
+<table width="85%" height="50%" border="2" align="center" cellpadding="0" cellspacing="0" bordercolor="#4a4646">
 <tbody><tr>
 <td>
         <h1 align="center">&nbsp;</h1>
