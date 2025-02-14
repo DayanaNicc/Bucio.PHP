@@ -9,17 +9,17 @@ body,td,th {
  }
 .style1 { color: #d62020 }
 .style2 {
-     color:rgb(0, 0, 0);
+     color:rgb(8, 235, 46);
      Font-weight: bold; 
 }
-.style3 {Color:rgb(22, 0, 117)}
-.style7 {Color:rgb(18, 11, 112);
+.style3 {Color:rgb(8, 235, 46)}
+.style7 {Color:rgb(196, 10, 10);
     Font-style: italic;
 }
 body {
-    background-color: #72dcf7; 
+    background-color:rgb(224, 139, 89); 
 }
-.style8 {Color: #0d41e1;
+.style8 {Color:rgb(1, 11, 41);
 }
 </style></head>
 
