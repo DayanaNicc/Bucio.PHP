@@ -30,15 +30,15 @@ body {
 <td>
         <h1 align="center">&nbsp;</h1>
         <h1 align="center" class="style8"> Public Library Expansion Project </h1>
-        <h2 align="center" class="style1"> Cost Estimates </h1>
+        <h2 align="center" class="style1"> Cost Estimates </h2>
 <table width=82%" border="0" align="center" cellpadding="5" cellspacing="0">
 <tbody>
     <tr>
-    <td width="23%" align="center" height="31" bgcolor="#b5b0b0" scope="col"> Expenditures </th>
-    <td width="19%" align="right" bgcolor="#b5b0b0" scope="col"> Estimated Cost </th>
-    <td width="19%" align="right" bgcolor="#b5b0b0" scope="col"> 10% Increase </th>
-    <td width="19%" align="right" bgcolor="#b5b0b0" scope="col"> 15% Increase </th>
-    <td width="21%" align="right" bgcolor="#b5b0b0" scope="col"> 20% Increase </th>
+    <td width="23%" align="center" height="31" bgcolor="#b5b0b0" scope="col"> Expenditures </td>
+    <td width="19%" align="right" bgcolor="#b5b0b0" scope="col"> Estimated Cost </td>
+    <td width="19%" align="right" bgcolor="#b5b0b0" scope="col"> 10% Increase </td>
+    <td width="19%" align="right" bgcolor="#b5b0b0" scope="col"> 15% Increase </td>
+    <td width="21%" align="right" bgcolor="#b5b0b0" scope="col"> 20% Increase </td>
 </tr>
 <tr bgcolor="#ffbe98">
     <td align="center" bgcolor="#ffbe98"> Lumber </td>
