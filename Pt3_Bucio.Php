@@ -1,3 +1,10 @@
+<title> Calorie Recommendation </title>
+<style type="text/css">
+    body {
+        background-color:#D2B48C;
+    }
+</style>
+
 <?php 
 function calculatecalories ($Weight,$Lifestyle) {
  If ($Lifestyle === 'A') {
