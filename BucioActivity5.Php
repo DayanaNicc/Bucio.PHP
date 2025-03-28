@@ -140,7 +140,8 @@
 
  <div class='result-box'>
 <?php
- if (isset($_POST['calculator'])) {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if (isset($_POST['calculator'])) 
     $Weight = $_POST['Weight'];
     $Height = $_POST['Height'];
 
@@ -153,29 +154,29 @@
         $bmiFormatted = number_format($bmi, 2);
 
     if ($bmi < 18.5) { 
-        $category = "Underweight";
-        $risk = "Low (but risk of other clinical problems increased)";
-        $class = "underweight";
+             $category = "Underweight";
+                $risk = "Low (but risk of other clinical problems increased)";
+                $class = "underweight";
     }   elseif ( $bmi >= 18.5 && $bmi <= 24.9) {
-        $category = "Normal";
-        $risk = "Average";
-        $class = "normal";
+                $category = "Normal";
+                $risk = "Average";
+                $class = "normal";
     }   elseif ( $bmi >= 25 && $bmi <= 29.9) {
-        $category = "Overweight";
+                $category = "Overweight";
                 $risk = "Mildly Increased";
                 $class = "overweight";
     }   elseif ( $bmi >= 30 && $bmi <= 34.9) {
-        $category =  "Obese (Class 1)";
+                $category =  "Obese (Class 1)";
                 $risk = "Moderate";
                 $class = "Obese";
     }   elseif ( $bmi >= 35 && $bmi <= 39.9) {
-        $category =  "Obese (Class 2)";
-        $risk = "Severe";
-        $class = "Obese";
+                $category =  "Obese (Class 2)";
+                $risk = "Severe";
+                $class = "Obese";
     }   else {
-        $category = "Obese (Class 3)";
-        $risk = "Very Severe";
-        $class = "obese";
+                $category = "Obese (Class 3)";
+                $risk = "Very Severe";
+                $class = "obese";
     }
     echo "<div class='result-box $class'>";
     echo "<h3>BMI Result</h3>";
