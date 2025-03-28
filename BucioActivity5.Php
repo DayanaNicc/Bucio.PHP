@@ -3,7 +3,7 @@
     <title>BMI Calculator</title>
     <style type="text/css">
     body { 
-        background: linear-gradient(-45deg,rgb(90, 0, 150),rgb(240, 236, 39),rgb(255, 36, 36),rgb(238, 185, 71));
+        background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
         background-size: 400% 400%;
         animation: gradientBG 10s ease infinite;
         display: flex;
@@ -142,7 +142,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $bmiFormatted = number_format($bmi, 2);
 
     if ($bmi < 18.5) { 
-             $classification = "Underweight";
+                $classification = "Underweight";
                 $risk = "Low (but risk of other clinical problems increased)";
                 $class = "underweight";
     }   elseif ( $bmi >= 18.5 && $bmi <= 24.9) {
