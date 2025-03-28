@@ -114,17 +114,6 @@
             padding: 15px;
         }
     }
-
-    @media (max-width: 480px) {
-        input[type=number], input[type=submit] {
-            font-size: 14px;
-            padding: 12px;
-        }
-
-        h1 {
-            font-size: 24px;
-        }
-    }
 </style>
 </head>
  <body>
@@ -141,7 +130,6 @@
  <div class='result-box'>
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-if (isset($_POST['calculator'])) 
     $Weight = $_POST['Weight'];
     $Height = $_POST['Height'];
 
@@ -154,34 +142,34 @@ if (isset($_POST['calculator']))
         $bmiFormatted = number_format($bmi, 2);
 
     if ($bmi < 18.5) { 
-             $category = "Underweight";
+             $classification = "Underweight";
                 $risk = "Low (but risk of other clinical problems increased)";
                 $class = "underweight";
     }   elseif ( $bmi >= 18.5 && $bmi <= 24.9) {
-                $category = "Normal";
+                $classification = "Normal";
                 $risk = "Average";
                 $class = "normal";
     }   elseif ( $bmi >= 25 && $bmi <= 29.9) {
-                $category = "Overweight";
+                $classification = "Overweight";
                 $risk = "Mildly Increased";
                 $class = "overweight";
     }   elseif ( $bmi >= 30 && $bmi <= 34.9) {
-                $category =  "Obese (Class 1)";
+                $classification  =  "Obese (Class I)";
                 $risk = "Moderate";
                 $class = "Obese";
     }   elseif ( $bmi >= 35 && $bmi <= 39.9) {
-                $category =  "Obese (Class 2)";
+                $classification =  "Obese (Class II)";
                 $risk = "Severe";
                 $class = "Obese";
     }   else {
-                $category = "Obese (Class 3)";
+                $classification = "Obese (Class III)";
                 $risk = "Very Severe";
                 $class = "obese";
     }
     echo "<div class='result-box $class'>";
     echo "<h3>BMI Result</h3>";
     echo "<p>Your BMI value is: <strong>$bmiFormatted</strong></p>";
-    echo "<p><strong>$category</strong></p>";
+    echo "<p><strong>$classification</strong></p>";
     echo "<p>Risk Level: $risk</p>";
     echo "</div>";
 
